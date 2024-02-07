@@ -13,11 +13,19 @@ function App() {
 		console.log("filterHogs");
 		setHogArray(newHogArray);
 	}
+	function sortHogNames(newHogArray) {
+		console.log("sortHogNames");
+		setHogArray(newHogArray);
+	}
+	function sortHogWeights(newHogArray) {
+		console.log("sortHogWeights");
+		setHogArray(newHogArray);
+	}
 
 	return (
 		<div className="App">
 			<Nav />
-			<Filter hogArray={hogArray} filterHogs={filterHogs}/>
+			<Filter hogArray={hogArray} filterHogs={filterHogs} sortHogNames={sortHogNames} sortHogWeights={sortHogWeights}/>
 			<Display hogArray={hogArray} setHogArray={setHogArray} />
 		</div>
 	);
